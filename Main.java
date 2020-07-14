@@ -1,6 +1,8 @@
 class Main {
 	public static void main(String args[]) {
-	System.out.println("Hello");
+	
+
+	hello("sato");
 
 	int number = 10;
 	System.out.println(number);
@@ -13,7 +15,16 @@ class Main {
 		System.out.println(i);
 		i++;
 	}
+
+	Person person1 = new Person("松山", "ひかり");
+
+	System.out.println(person1.firstName);
+	System.out.println(person1.lastName);
 	
+	}
+
+	public static void hello(String name) {
+		System.out.println("こんにちは" + name);
 	}
 
 }
